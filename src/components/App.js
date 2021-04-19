@@ -34,12 +34,14 @@ export default function App(props) {
       </nav>
 
       {/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
-      <Route exact path='/'>
-        <Home />
-      </Route>
-      <Route path='/items-list'>
-        <ItemsList items={[]} />
-      </Route>
+      <Switch>
+        <Route path='/items-list'>
+          <ItemsList items={[]} />
+        </Route>
+        <Route path='/'>
+          <Home />
+        </Route>
+      </Switch>
     </div>
   )
 }
