@@ -38,8 +38,7 @@ export default function App(props) {
         <Home />
       </Route>
       <Route path='/items-list'>
-        {/* <ItemsList items={[]} /> */}
-        <h1>Items list component</h1>
+        <ItemsList items={[]} />
       </Route>
     </div>
   )
