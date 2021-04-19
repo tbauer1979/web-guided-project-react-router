@@ -1,6 +1,6 @@
 import React from 'react'
 // We'll need quite a few imports from react-router-dom
-import { useParams, NavLink, useRouteMatch } from 'react-router-dom'
+import { Route, useParams, NavLink, useRouteMatch } from 'react-router-dom'
 
 import ItemDetails from './ItemDetails'
 
@@ -45,6 +45,9 @@ export default function Item(props) {
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
       {/* These Routes should render <ItemDetails /> */}
+      <Route path={`${path}/shipping`}>
+        <ItemDetails text={item.shipping} />
+      </Route>
 
       {/* 👉 STEP 10 - Shorten paths and urls with `useRouteMatch` hook */}
     </div>
