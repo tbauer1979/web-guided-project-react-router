@@ -17,7 +17,7 @@ export default function Item(props) {
   // we use this hook to grab they dynamic parts of the path (:itemID).
   const item = items.find(item => {
     return item.id == itemID
-  })
+  }) || {}
 
   return (
     <div className='item-wrapper'>
