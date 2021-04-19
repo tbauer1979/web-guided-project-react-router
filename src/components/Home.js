@@ -5,9 +5,11 @@ import { useHistory } from "react-router-dom";
 export default function Home() {
   // 👉 STEP 5 - Build a click handler that will imperatively
   // navigate us to <website base URL>/items-list
+  const history = useHistory()
 
   const routeToShop = () => {
-
+    // navigate to localhost:1234/items-list
+    console.log(history);
   }
 
   return (
