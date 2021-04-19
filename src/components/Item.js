@@ -39,8 +39,8 @@ export default function Item(props) {
 
       <nav className='item-sub-nav'>
         {/* 👉 STEP 8 - Here go the NavLinks to `<current url>/shipping` and `<current url>/description` */}
-        <NavLink to={`/items-list/${item.id}/shipping`}>Shipping</NavLink>
-        <NavLink to={`/items-list/${item.id}/description`}>Description</NavLink>
+        <NavLink to={`${url}/shipping`}>Shipping</NavLink>
+        <NavLink to={`${url}/description`}>Description</NavLink>
       </nav>
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
