@@ -8,7 +8,6 @@ export default function ItemsList(props) {
 
   return (
     <div className='items-list-wrapper'>
-      <h1>Items list</h1>
       {items.map(item => (
         <div
           className='item-card'
