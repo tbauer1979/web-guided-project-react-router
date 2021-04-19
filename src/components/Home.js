@@ -9,7 +9,7 @@ export default function Home() {
 
   const routeToShop = () => {
     // navigate to localhost:1234/items-list
-    console.log(history);
+    history.push('/items-list')
   }
 
   return (
